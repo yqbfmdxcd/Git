@@ -1,0 +1,18 @@
+.mzMenubox{
+    position: fixed;
+    width: 100%;
+    background:#000;
+    opacity: 0.6;
+    height:6.17rem;
+    z-index: 900;
+
+}
+.mzMenu{
+    position: fixed;
+    top:0.5rem;
+    width: 60%;
+    background:#000;
+    height:6.17rem;
+    z-index: 999;
+    border-top:1px solid #ccc;
+}
