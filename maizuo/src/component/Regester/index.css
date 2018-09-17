@@ -1,0 +1,31 @@
+.MzRegester{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:2rem;
+    font-size:24px
+}
+#Mztel {
+    padding-left:0.1rem;
+    margin-bottom:0.4rem;
+    border: 1px solid greenyellow;
+    border-top:0px;
+    width:3rem;
+    height:0.5rem;
+}
+#Mzcode{
+    padding-left:0.1rem;
+    margin-bottom:0.4rem;
+    width:3rem;
+    height:0.5rem;
+    border: 1px solid greenyellow;
+    border-top:0px;
+}
+#submit{
+    width:3rem;
+    height:0.5rem;
+    background:skyblue;
+    border-radius:0.25rem ;
+    color:white;
+    border:0;
+}

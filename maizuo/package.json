@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.2.5",
+    "axios": "^0.18.0",
     "babel-plugin-import": "^1.8.0",
     "react": "^16.4.2",
     "react-app-rewired": "^1.6.2",
     "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5"
   },
   "scripts": {
@@ -15,5 +18,11 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-app-rewired eject"
+  },
+  "proxy": {
+    "/v4": {
+      "target": "https://m.maizuo.com",
+      "changeOrigin": true
+    }
   }
 }

@@ -5,7 +5,8 @@ export default class Public extends Component{
     constructor(props){
         super(props)
         this.state={
-            showFlag:false
+            showFlag:false,
+            mzTitle:"卖座电影"
         }
         this.mzShow=this.mzShow.bind(this)
         this.hideMenu=this.hideMenu.bind(this)
@@ -19,7 +20,7 @@ export default class Public extends Component{
     
     hideMenu(event){
         event.stopPropagation()
-        var menu=document.getElementById('hideMenu').className
+        
         var target=event.target||event.srcElement;
         if(target.className.toLocaleLowerCase()!=="mzMenu".toLocaleLowerCase()){
             
@@ -32,8 +33,8 @@ export default class Public extends Component{
 
     
     render(){
-        var menu=<Menu />
-        if(this.state.showFlag==false){
+        var menu=<Menu btn={this.props.MzChangeTitle}/>
+        if(this.state.showFlag===false){
             menu=null
         }
         return(
@@ -41,7 +42,7 @@ export default class Public extends Component{
             <div className='mztop'>
                 <div className="mztopLeft "id="hideMenu" onClick={this.mzShow}>
                     <div className='iconfont icon-menu'></div>
-                    <div className="mztopLeft_menu">卖座电影</div>
+                    <div className="mztopLeft_menu">{this.props.title}</div>
                 </div>
                 <div className="mztopRight">
                 杭州<span className="iconfont icon-jiantouarrow483"></span>

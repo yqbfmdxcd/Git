@@ -1,7 +1,6 @@
 .mzbody{
     
     width:100%;
-    height:20rem;
     font-size:0.2rem;
     background:skyblue;
 }
@@ -13,3 +12,4 @@
     width:100%;
     margin:0px!important;
 }
+* { touch-action: none; }
