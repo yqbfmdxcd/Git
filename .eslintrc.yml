@@ -43,3 +43,4 @@ rules:
   no-unused-expressions: off
   global-require: off
   no-unused-expressions: off
+no-unused-expressions: off
